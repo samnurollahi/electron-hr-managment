@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./style/output.css" />
+    <!-- anim -->
+    <link rel="stylesheet" href="./style/animate.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./public/aw/css/all.min.css" />
+    <!-- jalali -->
+    <link rel="stylesheet" href="./style/jalali.css" />
+  </head>
+  <body class="animate__animated animate__fadeIn bg-stone-100">
+    <div>
+      <div class="w-[90%] m-auto bg-white py-10 px-3 rounded-md mt-[50px]">
+        <div
+          id="alertBox"
+          class="text-white bg-red-500 rounded-lg m-auto w-full md:w-[80%] py-4 px-3 mb-[50px] hidden"
+        ></div>
+
+        <div id="content">
+          <form class="animate__animated animate__fadeIn">
+            <div class="flex flex-wrap items-center justify-center">
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="name">نام: </label>
+                <input
+                  required
+                  id="nameInput"
+                  type="text"
+                  placeholder="سام نورالهی ..."
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="jobName">عنوان شغلی: </label>
+                <input
+                  required
+                  id="jobName"
+                  type="text"
+                  placeholder="برنامه نویس فرانت اند  ..."
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="age"> سن: </label>
+                <input
+                  required
+                  id="age"
+                  type="number"
+                  min="17"
+                  max="99"
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="dateOfBirth">تاریخ تولد : </label>
+                <input
+                  required
+                  id="dateOfBirth"
+                  type="text"
+                  data-jdp
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="dateJoin">تاریخ عضویت در شرکت : </label>
+                <input
+                  required
+                  id="dateJoin"
+                  type="text"
+                  data-jdp
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="email">ایمیل کارمند: </label>
+                <input
+                  required
+                  id="email"
+                  type="email"
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="phoneNumber">شماره تلفن: </label>
+                <input
+                  required
+                  id="phoneNumber"
+                  type="tel"
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+              <div class="flex flex-col ml-10 mb-8">
+                <label for="skills">مهارت ها : </label>
+                <input
+                  required
+                  id="skills"
+                  type="text"
+                  class="outline-0 border-2 border-stone-100 rounded-md bg-stone-100 transition-all focus:bg-white py-2 px-2"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              id="btnSubmit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md m-auto block transition-all hover:bg-blue-400 cursor-pointer"
+            >
+              ویرایش
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/editProfile.js"></script>
+    <!-- <script src="./script/jalali.js"></script>
+    <script>
+      jalaliDatepicker.startWatch();
+    </script> -->
+  </body>
+</html>

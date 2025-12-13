@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR</title>
+
+    <!-- loader -->
+    <link rel="stylesheet" href="./style/loader.css" />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./style/output.css" />
+    <!-- anim -->
+    <link rel="stylesheet" href="./style/animate.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./public/aw/css/all.min.css" />
+  </head>
+  <body
+    class="animate__animated animate__fadeIn bg-stone-100"
+    style="overflow-x: hidden"
+  >
+    <div class="w-[90%] rounded-md px-7 py-5 bg-white m-auto mt-[45px]">
+      <h1 class="mb-10 text-2xl">وضعیت کلی کارمندان</h1>
+
+      <table>
+        <tbody>
+          <tr>
+            <td class="pl-10 pb-5">تعداد کل کارمندان</td>
+            <td class="pl-10 pb-5" id="sum"></td>
+          </tr>
+          <tr>
+            <td class="pl-10 pb-5">تعداد کارمندان فعال</td>
+            <td class="pl-10 pb-5" id="active"></td>
+          </tr>
+          <tr>
+            <td class="pl-10 pb-5">تعداد کارمندان اخراج شده</td>
+            <td class="pl-10 pb-5" id="fire"></td>
+          </tr>
+          <tr>
+            <td class="pl-10 pb-5">تعداد کارمندان مرخصی گرفته</td>
+            <td class="pl-10 pb-5" id="leave"></td>
+          </tr>
+          <tr>
+            <td class="pl-10 pb-5">کل حقوق دریافتی کارمندان</td>
+            <td class="pl-10 pb-5" id="totalSalary"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./script/amar.js"></script>
+  </body>
+</html>

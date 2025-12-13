@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR</title>
+
+    <!-- loader -->
+    <link rel="stylesheet" href="./style/loader.css" />
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./style/output.css" />
+    <!-- anim -->
+    <link rel="stylesheet" href="./style/animate.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./public/aw/css/all.min.css" />
+  </head>
+  <body
+    class="animate__animated animate__fadeIn bg-stone-100"
+    style="overflow-x: hidden"
+  >
+    <div
+      id="alertExportCsv"
+      class="text-white bg-red-500 rounded-lg m-auto py-4 px-3 mb-[25px] hidden mt-[25px] w-[90%]"
+    ></div>
+    <div
+      class="border border-dashed rounded-md w-[90%] m-auto p-3 my-[50px] flex justify-center items-center"
+    >
+      <a
+        id="exportCsv"
+        class="fa fa-file-export ml-[25px] cursor-pointer text-blue-500"
+        title="دریافت خروجی اکسل از کارمندان"
+      ></a>
+
+      <a
+        id="btnAddKarmand"
+        href="./add.html"
+        class="fa fa-plus cursor-pointer text-red-700"
+      ></a>
+
+      <a
+        id="btnArchive"
+        href="./archive.html"
+        title="آمار کلی"
+        class="fa fa-archive cursor-pointer mr-[25px] text-yellow-500"
+      ></a>
+    </div>
+
+    <div class="w-[90%] m-auto">
+      <input
+        id="search"
+        type="text"
+        placeholder="نام شخص مورد نظر ..."
+        class="bg-white border border-stone-400 outline-0 w-full px-3 py-4 rounded-lg mb-[15px]"
+      />
+    </div>
+
+    <div class="w-[90%] m-auto" id="content">
+      <div class="size-[100px] m-auto mt-[150px]">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>

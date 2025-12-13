@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./style/output.css" />
+    <!-- anim -->
+    <link rel="stylesheet" href="./style/animate.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./public/aw/css/all.min.css" />
+    <!-- jalali -->
+    <link rel="stylesheet" href="./style/jalali.css" />
+  </head>
+  <body class="animate__animated animate__fadeIn bg-stone-100">
+    <div>
+      <div
+        class="w-[500px] bg-white py-[18px] m-auto flex justify-around rounded-b-4xl border-b border-b-blue-500"
+      >
+        <button
+          id="autoAddExcel"
+          class="text-lg bg-stone-300 py-2 px-5 rounded-md cursor-pointer hover:rounded-3xl transition-all"
+        >
+          ورود از اکسل
+        </button>
+        <button
+          id="dasti"
+          class="text-lg bg-stone-300 py-2 px-5 rounded-md cursor-pointer hover:rounded-3xl transition-all"
+        >
+          دستی
+        </button>
+      </div>
+
+      <div class="w-[90%] m-auto bg-white py-10 px-3 rounded-md mt-[50px]">
+        <div
+          id="alertBox"
+          class="text-white bg-red-500 rounded-lg m-auto w-full md:w-[80%] py-4 px-3 mb-[50px] hidden"
+        ></div>
+
+        <div id="content">
+          <h1 class="text-center">یکی از حالات اضافه کردن را انتخاب کنید</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/add.js" type="module"></script>
+    <script src="./script/jalali.js"></script>
+    <script src="./script/datePicker.js"></script>
+    <script>
+      jalaliDatepicker.startWatch();
+    </script>
+  </body>
+</html>
